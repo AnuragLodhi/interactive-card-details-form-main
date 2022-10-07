@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#cards {
+    background-image: url(./images/bg-main-mobile.png);
+    background-size: cover;
+    min-height: 35vh;
+    font-size: 4.3vw;
+}
+
+#card-front {
+    background-image: url(./images/bg-card-front.png);
+    background-size: contain;
+    width: 75vw;
+    height: calc(245/447 * 75vw);
+    position: absolute;
+    top: 19vh;
+    left: 5vw;
+}
+
+#card-back {
+    background-image: url(./images/bg-card-back.png);
+    background-size: contain;
+    width: 75vw;
+    height: calc(245/447 * 75vw);
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+}
+
+#card-icon {
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+
+#card-no {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1.05em;
+    position: absolute;
+    bottom: 30%;
+    left: 7%;
+}
+
+#card-name {
+    color: white;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    letter-spacing: 1px;
+}
+
+#card-date {
+    color: white;
+    font-size: 0.6em;
+    font-weight: 300;
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    letter-spacing: 1px;
+
+}
+
+#card-cvc {
+    color: white;
+    font-size: 0.6em;
+    font-weight: 300;
+    position: absolute;
+    top: 46%;
+    right: 12%;
+    letter-spacing: 1px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 0 6vw;
+    margin-top: 12vh;
+    font-size: 14px;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+input {
+    display: inline-block;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    border: solid 1px hsl(270, 3%, 87%);
+    padding-left: 20px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+::placeholder {
+    color: hsl(270, 3%, 87%);
+    /* font-size: 1.5em; */
+}
+
+#name {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#number {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#exp-date-mm {
+    display: inline-block;
+    width: calc(50% - 7px);
+    margin-right: 10px;
+}
+#exp-date-yy {
+    display: inline-block;
+    width: calc(50% - 7px);
+}
+
+#exp {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+
+#cvcno {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+}
+
+button {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    height: 50px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+}
+
